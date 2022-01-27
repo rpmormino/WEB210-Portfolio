@@ -1,0 +1,215 @@
+/*Rose Mormino
+Stylesheet for index.html
+26 Jan 2022
+*/
+
+/*
+COLORS - Split Complement of Organge
+Light Green - #8DF0D7
+Medium Green - #68A395
+Dark Green - #2d6155
+
+Orange - #F0BC81
+
+Light Blue - #758CF0
+Dark Blue- #4859A3
+
+Dark Grey - #1f1f1f
+*/
+
+/*Style Reset*/
+body, 
+main, 
+header, 
+section, 
+h1, 
+h2, 
+h3, 
+p, 
+ul, 
+li, 
+footer {
+    margin: 0;
+}
+
+/*Global
+-------------------------------------------------*/
+* {
+    color: #1f1f1f;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+main {
+    background-color: #68A395;
+}
+
+h2 {
+    padding: .5em;
+    color: #2d6155;
+    font-size: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    color: #4859A3;
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Profile/Header
+-------------------------------------------------*/
+header {
+    text-align: center;
+    background-color: #e6e6e6;
+    padding-bottom: 2em;
+    border-bottom: 2px dashed #68A395;
+}
+
+h1 { 
+    background-color: #212121;
+    margin: 0 auto;
+    padding: .5em;
+    color: #fff;
+    font-size: 4rem;
+    font-style: italic;
+    border-bottom: 50px solid #68A395;
+    
+}
+
+header h2, header p {
+    background-color: #e6e6e6;
+    
+}
+
+header p {
+    font-size: 1.12rem;
+    text-align: left;
+    padding-left: 15em
+}
+
+/*Projects
+-------------------------------------------------*/
+.projects {
+    background-color: #d9d9d9;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    border-bottom: 2px dashed #68A395;
+}
+
+.projects h3 {
+    text-align: center;
+    padding: 1em 0;
+}
+
+img {
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.vicious-cycles{
+    width:300px;
+}
+
+.cookbook-page, .shed-mural {
+    width: 500px;
+}
+
+.projects a {
+    color: #2d6155;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    background-color: #F0BC81;
+    color: #000;
+    font-style: oblique;
+    border-radius: 5px;
+    padding: .2em;
+}
+
+a.projects-btn {
+    background-color: #4859A3;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 1.1em;
+    margin-top: 2em;
+}
+
+a:hover.projects-btn {
+    background-color: #F0BC81;
+    color: #1f1f1f;
+    border-radius: 20px;
+    text-decoration: none;
+    font-style: oblique;
+    font-size: 1.1rem;
+    padding: 1.1em;
+
+}
+
+/*Work Experience
+-------------------------------------------------*/
+.work-experience {
+    background-color: #e6e6e6;
+    padding-left: 3em;
+    padding-bottom: 2em;
+    border-bottom: 2px dashed #68A395;
+}
+
+ul li{
+    list-style-type: none;
+    padding-right: 3em;
+}
+
+/*Education
+-------------------------------------------------*/
+.education {
+    background-color: #d9d9d9;
+    padding-left: 3em;
+    padding-bottom: 2em;
+}
+
+
+/*Contact/Footer
+-------------------------------------------------*/
+footer {
+    background-color: #212121;
+    padding-left: 3em;
+    padding-bottom: 1.5em;
+    border-top: 50px solid #68A395;
+}
+
+footer h2 {
+    text-align: right;
+    padding-right: 1.5em;
+    color: #fff;
+}
+
+footer ul li{
+    text-align: right;
+    list-style-type: none;
+    padding-right: 4em;
+    color: #fff;
+}
+
+footer a {
+    color: #8DF0D7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background: #68A395;
+    color: #fff;
+    border-radius: 2px;
+    padding: .1em
+}
+
+footer a:active {
+    background: #4859A3;
+    color: #fff;
+    border-radius: 2px;
+    padding: .1em
+}
