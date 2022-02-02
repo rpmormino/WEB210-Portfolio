@@ -4,6 +4,13 @@ Stylesheet for index.html
 */
 
 /*
+For page title
+font-family: 'Big Shoulders Inline Text', cursive;
+
+For body copy & headers
+font-family: 'Nunito', sans-serif;
+
+/*
 COLORS - Split Complement of Organge
 Light Green - #8DF0D7
 Medium Green - #68A395
@@ -17,43 +24,50 @@ Dark Blue- #4859A3
 Dark Grey - #1f1f1f
 */
 
-/*Style Reset*/
-body, 
-main, 
-header, 
-section, 
-h1, 
-h2, 
-h3, 
-p, 
-ul, 
-li, 
-footer {
-    margin: 0;
-}
 
 /*Global
 -------------------------------------------------*/
+html {
+    box-sizing: border-box;
+    background-color: #212121;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 * {
     color: #1f1f1f;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 1200px;
 }
 
 main {
+    width: 1000px;
+    margin: 0 auto;
     background-color: #68A395;
 }
 
+h1 {
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-weight: 900;
+}
+
 h2 {
-    padding: .5em;
-    color: #2d6155;
+    color: #1f1f1f;
     font-size: 3rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
 }
 
 h3 {
     color: #4859A3;
     font-size: 2rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;  
 }
 
 /*Profile/Header
@@ -61,58 +75,63 @@ h3 {
 header {
     text-align: center;
     background-color: #e6e6e6;
-    padding-bottom: 2em;
-    border-bottom: 2px dashed #68A395;
+    padding-bottom: 20px;
 }
 
 h1 { 
     background-color: #212121;
+    text-shadow:  2px 2px #68A395, 3px 3px #8DF0D7, 4px 4px 8px #fff; 
     margin: 0 auto;
-    padding: .5em;
+    padding: 20px;
     color: #fff;
-    font-size: 4rem;
+    font-size: 85px;
     font-style: italic;
-    border-bottom: 50px solid #68A395;
-    
+    border: 1px dashed #e6e6e6;
+}
+
+header h2 {
+    margin: 5px;
 }
 
 header h2, header p {
     background-color: #e6e6e6;
-    
 }
 
 header p {
-    font-size: 1.12rem;
+    margin: 0 auto;
+    font-size: 16px;
     text-align: left;
-    padding-left: 15em
+    width: 80%;
+    padding-left: 50px;
 }
 
 /*Projects
 -------------------------------------------------*/
+
 .projects {
     background-color: #d9d9d9;
-    padding-left: 3em;
-    padding-bottom: 2em;
-    border-bottom: 2px dashed #68A395;
+    padding: 40px;
+}
+
+
+.projects h2 {
+    float: left;
+    margin-top: 0;
+    margin-right: 10px;
+    border-right: 1px solid #1f1f1f;
+    padding-right: 10px
 }
 
 .projects h3 {
     text-align: center;
-    padding: 1em 0;
 }
 
-img {
-    border-radius: 10px;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-
-.vicious-cycles{
-    width:300px;
-}
-
-.cookbook-page, .shed-mural {
-    width: 500px;
+.projects img {
+    box-shadow: 2px 2px 6px rgba(57, 66, 68, 0.35);
+    clear: both;
+    float: left;
+    width: 400px;
+    margin-right: 10px;
 }
 
 .projects a {
@@ -121,55 +140,90 @@ img {
     text-decoration: none;
 }
 
-.projects a:hover {
-    background-color: #F0BC81;
-    color: #000;
-    font-style: oblique;
-    border-radius: 5px;
-    padding: .2em;
+.clear {
+    clear: both;
 }
 
 a.projects-btn {
+    width: 130px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
     background-color: #4859A3;
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 1.1em;
-    margin-top: 2em;
+    font-size: 16px;
+
 }
 
-a:hover.projects-btn {
+.projects a:hover.projects-btn, .projects a:hover {
     background-color: #F0BC81;
     color: #1f1f1f;
-    border-radius: 20px;
-    text-decoration: none;
-    font-style: oblique;
-    font-size: 1.1rem;
-    padding: 1.1em;
-
+    font-style: italic;
+    font-size: 15px;
+    padding: 10px;
 }
+
+.projects a:hover {
+    padding: .2em;
+}
+
 
 /*Work Experience
 -------------------------------------------------*/
 .work-experience {
+    clear: both;
     background-color: #e6e6e6;
-    padding-left: 3em;
-    padding-bottom: 2em;
-    border-bottom: 2px dashed #68A395;
+    padding: 40px;
 }
 
-ul li{
+.work-experience h2, .work-experience h3 {
+    margin: 5px;
+}
+
+.work-experience ul li{
     list-style-type: none;
-    padding-right: 3em;
+    padding-right: 40px;
+}
+
+.work-experience p:first-of-type {
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.work-experience p:last-of-type {
+    margin: 0;
+    font-style: italic;
+}
+
+.work-experience ul li:first-of-type {
+   font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
 }
 
 /*Education
 -------------------------------------------------*/
 .education {
     background-color: #d9d9d9;
-    padding-left: 3em;
-    padding-bottom: 2em;
+    padding: 40px;
+}
+
+.education h2, .education h3 {
+    margin: 5px;
+}
+
+.education p {
+    margin: 0 auto 5px auto;
+    padding-left: 10px;
+}
+
+.education p:first-of-type {
+    font-style: italic;
+    font-weight: bold;
 }
 
 
@@ -177,21 +231,23 @@ ul li{
 -------------------------------------------------*/
 footer {
     background-color: #212121;
-    padding-left: 3em;
-    padding-bottom: 1.5em;
-    border-top: 50px solid #68A395;
+    border: 1px dashed #e6e6e6;
+    padding: 40px;
 }
 
 footer h2 {
-    text-align: right;
-    padding-right: 1.5em;
+    margin-top: 0;
+    font-size: 60px;
+    float: left;
     color: #fff;
+    line-height: 50px;
+    text-shadow: 2px 2px #68A395, 3px 3px #8DF0D7; 
 }
 
 footer ul li{
     text-align: right;
     list-style-type: none;
-    padding-right: 4em;
+    padding: 5px;
     color: #fff;
 }
 
@@ -201,15 +257,20 @@ footer a {
 }
 
 footer a:hover {
-    background: #68A395;
-    color: #fff;
+    /* background: #68A395; */
+    color: #8DF0D7;
+    text-shadow: 1px 1px 5px #6effdd;
     border-radius: 2px;
-    padding: .1em
 }
 
 footer a:active {
     background: #4859A3;
     color: #fff;
     border-radius: 2px;
-    padding: .1em
+}
+
+footer p {
+    text-align: center;
+    clear: both;
+    color: #fff;
 }
